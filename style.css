@@ -21,12 +21,7 @@ a {
 
 /*================ navbar ===============*/
 nav {
-  position: fixed;
   height: 70px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
   border: 1px solid black;
 }
 
@@ -94,7 +89,7 @@ nav {
 
 /*============= banner ==============*/
 .banner {
-  margin: 150px 0 0 0;
+  margin: 80px 0 0 0;
 }
 .banner img {
   height: 400px;
@@ -117,10 +112,81 @@ nav {
   margin-top: 30px;
 }
 
-.banner button:hover{
-    background-color: red;
+.banner button:hover {
+  background-color: red;
 }
 
-.banner button:active{
-    font-size: 15px;
+.banner button:active {
+  font-size: 15px;
+}
+
+/*============= showtime ==============*/
+
+.show-time h3 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 80px;
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+.show-time p {
+  margin-top: 5px;
+  text-align: center;
+  color: var(--description-color);
+}
+
+.show-time-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.show-time-card {
+  background-color: var(--cards-background-color);
+  height: 450px;
+  width: 250px;
+  padding: 40px;
+  margin: 50px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--description-color);
+}
+
+.show-time-card img {
+  height: 300px;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.show-time-card h3 {
+  font-size: 18px;
+  margin: 15px 0 0 0;
+  color: var(--text-color);
+}
+
+.show-time-card p {
+  color: var(--description-color);
+  font-size: 17px;
+  margin: 5px 0;
+}
+
+.show-time-card button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  height: 45px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.show-time-card button:hover {
+  background-color: red;
+}
+
+.show-time-card button:active {
+  font-size: 16px;
 }
