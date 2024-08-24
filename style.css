@@ -411,119 +411,420 @@ nav {
   color: var(--text-color);
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 790px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*=============== colors =============*/
+  :root {
+    --background-color: #fff;
+    --cards-background-color: #fff;
+    --cards-container-color: #e6e6e6;
+    --text-color: #0d0d0d;
+    --description-color: #595959;
+    --button-color: #e10531;
+    --button-text-color: #fff;
+  }
+  
+  /*================ navbar ===============*/
+  nav {
+    height: 70px;
+  }
+  
   .navbar {
     display: block;
     margin: auto;
     height: 100%;
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    padding: 0 0px;
+    padding: 0 40px;
     align-items: center;
   }
-
+  
   .navbar img {
-    height: 36px;
+    height: 60px;
   }
-
+  
+  .nav-links {
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
   .nav-links li {
-    margin: 0 6px;
+    margin: 0 10px;
     list-style: none;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
     text-transform: capitalize;
   }
-
+  
+  .nav-links li a {
+    color: var(--text-color);
+    position: relative;
+  }
+  
+  .nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--text-color);
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
   .icons i {
-    font-size: 20px;
-    margin: 0 3px;
+    font-size: 27px;
+    margin: 0 10px;
     color: var(--text-color);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
-
-  .show-time h3 {
-    margin: 0;
+  
+  .icons i:hover {
+    color: var(--button-color);
+    transform: scale(1.2);
   }
-
+  
+  /*============= movies ==============*/
+  
+  .show-time h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-size: 30px;
+    color: var(--text-color);
+  }
+  
   .show-time p {
     text-align: center;
     color: var(--description-color);
-    font-size: 14px;
   }
-
+  
+  .show-time-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  
   .show-time-card {
     background-color: var(--cards-background-color);
-    height: auto;
-    width: 250px;
+    height: 350px;
+    width: 220px;
     padding: 40px;
-    margin: 25px 20px;
+    margin: 20px 20px;
     border-radius: 10px;
     border: 1px solid var(--description-color);
   }
-
+  
+  .show-time-card img {
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  .show-time-card h3 {
+    font-size: 18px;
+    margin: 15px 0 0 0;
+    color: var(--text-color);
+  }
+  
+  .show-time-card p {
+    color: var(--description-color);
+    font-size: 17px;
+    margin: 5px 0;
+    text-transform: capitalize;
+  }
+  
+  .show-time-card button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    height: 45px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+  .show-time-card button:hover {
+    background-color: red;
+  }
+  
+  .show-time-card button:active {
+    font-size: 16px;
+  }
+  
+  /*=================== stream section ==================*/
   .stream-heading {
     text-align: center;
     text-transform: capitalize;
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 30px;
     color: var(--text-color);
   }
-
+  
+  .stream-heading-desc {
+    text-align: center;
+    color: var(--description-color);
+  }
+  
   .stream-cards-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content:center;
+    padding:30px 0;
   }
-
+  
   .stream-card {
+    background-color: var(--cards-background-color);
+    height: 350px;
+    width: 250px;
+    padding: 40px;
     margin: 20px 20px;
-    width: 216px;
+    border-radius: 10px;
+    border: 1px solid var(--description-color);
   }
-
+  
+  .stream-card img {
+    height: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  .stream-card h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 15px 0 0 0;
+    color: var(--text-color);
+  }
+  
+  .stream-card p {
+    color: var(--description-color);
+    font-size: 17px;
+    margin: 5px 0;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  /*=========== Tickets =============*/
+  .tickets-section {
+    background-color: var(--cards-container-color);
+    padding-top: 80px;
+  }
+  
+  .tickets-section-heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: var(--text-color);
+    margin: 0;
+  }
+  
   .tickets-heading-desc {
     text-align: center;
-    font-size: 13px;
     color: var(--description-color);
   }
-
+  
+  .tickets-cards-container {
+    padding: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .ticket-card {
+    background-color: var(--cards-background-color);
+    height: 320px;
+    width: 280px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .movie-name {
+    text-transform: capitalize;
+    font-size: 19px;
+    margin-top: 30px;
+    display: inline;
+  }
+  
+  .show-time {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .tickets-desc-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 150px;
+  }
+  
+  .left p {
+    text-transform: capitalize;
+    text-align: left;
+    margin: 11px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--description-color);
+  }
+  
+  .right {
+    height: 190px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right input {
+    margin: 10px 0;
+    width: 70px;
+    height: 30px;
+    padding: 0 0 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .right p {
+    display: block;
+    margin: auto;
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--description-color);
+  }
+  
   .ticket-card button {
     background-color: var(--button-color);
     color: var(--button-text-color);
     height: 40px;
-    width: 100px;
+    width: 120px;
     border: none;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 17px;
     text-transform: capitalize;
   }
-
-  .show-time {
-    margin-left: 40px;
+  
+  .ticket-card button:hover {
+    background-color: red;
   }
-
-  .ticket-card {
-    height: auto;
-    margin: 20px;
+  
+  .ticket-card button:active {
+    font-size: 17px;
   }
-
+  
+  /*========================== booking section ========================*/
+  .booking {
+    padding: 70px 0;
+    text-align: center;
+  }
+  
   .booking-heading {
-    font-size: 25px;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: var(--text-color);
   }
-
-  .booking-heading-dec{
-    font-size:12px ;
+  
+  .booking-heading-dec {
+    color: var(--description-color);
+    font-size: 23px;
   }
-
-  .form-body{
-    width: 250px;
+  
+  .form-body {
+    border: 1px solid#b3b3b3;
+    border-radius: 10px;
+    padding: 30px;
+    height: 510px;
+    width: 450px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
   }
-
+  
+  .form-body label {
+    margin-right: 380px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
   .form-body input {
-    width: 180px;
+    margin: 10px 0 30px 0;
+    height: 40px;
+    width: 380px;
+    border-radius: 10px;
+    padding: 0 20px;
+    border: 0.1px solid #b3b3b3;
   }
   
   .form-body button {
-    width: 150px;
+    height: 40px;
+    width: 420px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .form-body button:hover {
+    background-color: red;
+  }
+  
+  .form-body button:active {
+    font-size: 17px;
+  }
+  
+  /*================== footer ==============*/
+  .footer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .social-links {
+    display: flex;
+  }
+  
+  .social-links li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 25px;
+  }
+  
+  .social-links li a {
+    color: var(--text-color);
   }
 }
