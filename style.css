@@ -134,6 +134,7 @@ nav {
   color: var(--description-color);
   font-size: 17px;
   margin: 5px 0;
+  text-transform: capitalize;
 }
 
 .show-time-card button {
@@ -156,6 +157,58 @@ nav {
 .show-time-card button:active {
   font-size: 16px;
 }
+
+/*=================== stream section ==================*/
+.stream-heading {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+.stream-heading-desc{
+text-align: center;
+color: var(--description-color);
+}
+
+.stream-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stream-card {
+  background-color: var(--cards-background-color);
+  height: 350px;
+  width: 250px;
+  padding: 40px;
+  margin: 50px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--description-color);
+}
+
+.stream-card img {
+  height: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.stream-card h3 {
+  font-size: 18px;
+  margin: 15px 0 0 0;
+  color: var(--text-color);
+}
+
+.stream-card p {
+  color: var(--description-color);
+  font-size: 17px;
+  margin: 5px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
 
 /*=========== Tickets =============*/
 .tickets-section {
