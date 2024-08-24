@@ -386,3 +386,26 @@ color: var(--description-color);
 .form-body button:active {
   font-size: 17px;
 }
+
+/*================== footer ==============*/
+.footer{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.social-links li a{
+    color: var(--text-color);
+}
