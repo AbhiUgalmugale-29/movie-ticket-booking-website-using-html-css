@@ -167,9 +167,9 @@ nav {
   color: var(--text-color);
 }
 
-.stream-heading-desc{
-text-align: center;
-color: var(--description-color);
+.stream-heading-desc {
+  text-align: center;
+  color: var(--description-color);
 }
 
 .stream-cards-container {
@@ -197,6 +197,8 @@ color: var(--description-color);
 
 .stream-card h3 {
   font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
   margin: 15px 0 0 0;
   color: var(--text-color);
 }
@@ -208,7 +210,6 @@ color: var(--description-color);
   text-align: center;
   text-transform: capitalize;
 }
-
 
 /*=========== Tickets =============*/
 .tickets-section {
@@ -388,24 +389,141 @@ color: var(--description-color);
 }
 
 /*================== footer ==============*/
-.footer{
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
+.footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
 
-.social-links{
-    display: flex;
+.social-links {
+  display: flex;
 }
 
 .social-links li {
-    list-style: none;
-    margin: 0 10px;
-    font-size: 25px;
+  list-style: none;
+  margin: 0 10px;
+  font-size: 25px;
 }
 
-.social-links li a{
+.social-links li a {
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 360px) {
+  .navbar {
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px;
+    align-items: center;
+  }
+
+  .navbar img {
+    height: 36px;
+  }
+
+  .nav-links li {
+    margin: 0 6px;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .icons i {
+    font-size: 20px;
+    margin: 0 3px;
     color: var(--text-color);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .show-time h3 {
+    margin: 0;
+  }
+
+  .show-time p {
+    text-align: center;
+    color: var(--description-color);
+    font-size: 14px;
+  }
+
+  .show-time-card {
+    background-color: var(--cards-background-color);
+    height: auto;
+    width: 250px;
+    padding: 40px;
+    margin: 25px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--description-color);
+  }
+
+  .stream-heading {
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-size: 25px;
+    color: var(--text-color);
+  }
+
+  .stream-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .stream-card {
+    margin: 20px 20px;
+    width: 216px;
+  }
+
+  .tickets-heading-desc {
+    text-align: center;
+    font-size: 13px;
+    color: var(--description-color);
+  }
+
+  .ticket-card button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+
+  .show-time {
+    margin-left: 40px;
+  }
+
+  .ticket-card {
+    height: auto;
+    margin: 20px;
+  }
+
+  .booking-heading {
+    font-size: 25px;
+  }
+
+  .booking-heading-dec{
+    font-size:12px ;
+  }
+
+  .form-body{
+    width: 250px;
+  }
+
+  .form-body input {
+    width: 180px;
+  }
+  
+  .form-body button {
+    width: 150px;
+  }
 }
