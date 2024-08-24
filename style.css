@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== colors =============*/
+:root {
+  --background-color: #fff;
+  --cards-background-color: #fff;
+  --cards-container-color: #e6e6e6;
+  --text-color: #0d0d0d;
+  --description-color: #595959;
+  --button-color: #e10531;
+  --button-text-color: #fff;
+}
+
+nav {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    z-index: 100;
+}
+
+.navbar{
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.navbar img{
+    height: 60px;
+
+}
+
+.nav-links{
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li{
+    margin: 0 10px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.nav-links li a {
+    color: var(--text-color);
+    position: relative; 
+}
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.5px; 
+    left: 0;
+    bottom: 0;
+    background-color: var(--text-color);
+    transition: width 0.4s ease-in-out; 
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+.icons i {
+    font-size: 27px;
+    margin: 0 10px;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.icons i:hover {
+    color: var(--button-text-color); 
+    transform: scale(1.2); 
+}
+
