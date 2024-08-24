@@ -96,7 +96,7 @@ nav {
   display: block;
   margin: auto;
   object-fit: cover;
-  border: 2px solid black;
+  border: 3.5px solid black;
 }
 
 .banner button {
@@ -125,13 +125,12 @@ nav {
 .show-time h3 {
   text-align: center;
   text-transform: capitalize;
-  margin-top: 80px;
+  margin-top: 60px;
   font-size: 30px;
   color: var(--text-color);
 }
 
 .show-time p {
-  margin-top: 5px;
   text-align: center;
   color: var(--description-color);
 }
@@ -190,3 +189,118 @@ nav {
 .show-time-card button:active {
   font-size: 16px;
 }
+
+/*=========== Tickets =============*/
+.tickets-section {
+    background-color: var(--cards-container-color);
+    padding-top: 80px;
+  }
+  
+  .tickets-section-heading {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: var(--text-color);
+    margin: 0;
+  }
+  
+  .tickets-heading-desc {
+    text-align: center;
+    color: var(--description-color);
+  }
+  
+  .tickets-cards-container {
+    padding: 30px 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .ticket-card {
+    background-color: var(--cards-background-color);
+    height: 320px;
+    width: 320px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 50px;
+  }
+  
+  .movie-name {
+    text-transform: capitalize;
+    font-size: 19px;
+    margin-top: 30px;
+    display: inline;
+  }
+  
+  .show-time {
+    display: inline;
+    margin-left: 60px;
+  }
+  
+  .tickets-desc-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 150px;
+  }
+  
+  .left p {
+    text-transform: capitalize;
+    text-align: left;
+    margin: 11px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--description-color);
+  }
+  
+  .right {
+    height: 190px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right input {
+    margin: 10px 0;
+    width: 70px;
+    height: 30px;
+    padding: 0 0 0 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .right p {
+    display: block;
+    margin: auto;
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--description-color);
+  }
+  
+  .ticket-card button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+
+  .ticket-card button:hover {
+    background-color: red;
+  }
+  
+  .ticket-card button:active {
+    font-size: 17px;
+  }

@@ -9,6 +9,10 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--------------------- navbar ---------------------->
@@ -32,51 +36,143 @@
     <!-------------------- banner section ----------------->
     <section class="banner">
       <img src="./img/Kerfin7-NEA-2195.jpg" alt="banner" />
-      <a href="#"><button>Get Tickets</button></a>
+      <a href="#tickets"><button>Get Tickets</button></a>
     </section>
 
     <!------------------- show time section ------------------>
     <section class="show-time">
-        <h3>Showtimes</h3>
-        <p>Find the perfect showtime for your movie.</p>
+      <h3>Showtimes</h3>
+      <p>Find the perfect showtime for your movie.</p>
+
+      <div class="show-time-cards-container">
+        <div class="show-time-card">
+          <img src="./img/show-time-section-images/stree-2.avif" alt="image" />
+          <h3>stree 2: sarkate ka aatank</h3>
+          <p>comedy/horror</p>
+          <p>⏱️7:00 PM</p>
+          <a href="#tickets"><button>Get Tickets</button></a>
+        </div>
+
+        <div class="show-time-card">
+          <img
+            src="./img/show-time-section-images/alienromulus.avif"
+            alt="image"
+          />
+          <h3>alien: romulus</h3>
+          <p>horror/sci-fi/thriller</p>
+          <p>⏱️8:30 PM</p>
+          <a href="#tickets"><button>Get Tickets</button></a>
+        </div>
+
+        <div class="show-time-card">
+          <img src="./img/show-time-section-images/vedaa.avif" alt="image" />
+          <h3>vedaa</h3>
+          <p>action/drama</p>
+          <p>⏱️6:15 PM</p>
+          <a href="#tickets"><button>Get Tickets</button></a>
+        </div>
+
+        <div class="show-time-card">
+          <img
+            src="./img/show-time-section-images/raghuveer.avif"
+            alt="image"
+          />
+          <h3>raghuveer</h3>
+          <p>biography/devotional/drama</p>
+          <p>⏱️9:45 PM</p>
+          <a href="#tickets"><button>Get Tickets</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- tickets section --------------->
+    <section id="tickets" class="tickets-section">
+        <h3 class="tickets-section-heading">select tickets</h3>
+        <p class="tickets-heading-desc">Choose your preferred movie and showtime.</p>
   
-        <div class="show-time-cards-container">
-          <div class="show-time-card">
-            <img src="./img/show-time-section-images/stree-2.avif" alt="image" />
-            <h3>stree 2: sarkate ka aatank</h3>
-            <p>comedy/horror</p>
-            <p>⏱️7:00 PM</p>
-            <a href="#"><button>Get Tickets</button></a>
+        <div class="tickets-cards-container">
+          <div class="ticket-card">
+            <h3 class="movie-name">stree 2: sarkate ka aatank</h3>
+  
+            <div class="tickets-desc-container">
+              <div class="left">
+                <p>adult:</p>
+                <p>child:</p>
+                <p>adult:</p>
+                <p>child:</p>
+              </div>
+              <div class="right">
+                <input type="number" placeholder="2" />
+                <input type="number" placeholder="1" />
+                <p>₹ 250/-</p>
+                <p>₹ 150/-</p>
+              </div>
+            </div>
+            <button>buy tickets</button>
+            <p class="show-time">⏱️ 7:00 PM</p>
           </div>
   
-          <div class="show-time-card">
-            <img
-              src="./img/show-time-section-images/alienromulus.avif"
-              alt="image"
-            />
-            <h3>alien: romulus</h3>
-            <p>horror/sci-fi/thriller</p>
-            <p>⏱️8:30 PM</p>
-            <a href="#"><button>Get Tickets</button></a>
+          <div class="ticket-card">
+            <h3 class="movie-name">alien: romulus</h3>
+  
+            <div class="tickets-desc-container">
+              <div class="left">
+                <p>adult:</p>
+                <p>child:</p>
+                <p>adult:</p>
+                <p>child:</p>
+              </div>
+              <div class="right">
+                <input type="number" placeholder="2" />
+                <input type="number" placeholder="1" />
+                <p>₹ 300/-</p>
+                <p>₹ 150/-</p>
+              </div>
+            </div>
+            <button>buy tickets</button>
+            <p class="show-time">⏱️ 8:30 PM</p>
           </div>
   
-          <div class="show-time-card">
-            <img src="./img/show-time-section-images/vedaa.avif" alt="image" />
-            <h3>vedaa</h3>
-            <p>action/drama</p>
-            <p>⏱️6:15 PM</p>
-            <a href="#"><button>Get Tickets</button></a>
+          <div class="ticket-card">
+            <h3 class="movie-name">vedaa</h3>
+  
+            <div class="tickets-desc-container">
+              <div class="left">
+                <p>adult:</p>
+                <p>child:</p>
+                <p>adult:</p>
+                <p>child:</p>
+              </div>
+              <div class="right">
+                <input type="number" placeholder="2" />
+                <input type="number" placeholder="1" />
+                <p>₹ 250/-</p>
+                <p>₹ 150/-</p>
+              </div>
+            </div>
+            <button>buy tickets</button>
+            <p class="show-time">⏱️ 6:15 PM</p>
           </div>
   
-          <div class="show-time-card">
-            <img
-              src="./img/show-time-section-images/raghuveer.avif"
-              alt="image"
-            />
-            <h3>raghuveer</h3>
-            <p>biography/devotional/drama</p>
-            <p>⏱️9:45 PM</p>
-            <a href="#"><button>Get Tickets</button></a>
+          <div class="ticket-card">
+            <h3 class="movie-name">raghuveer</h3>
+  
+            <div class="tickets-desc-container">
+              <div class="left">
+                <p>adult:</p>
+                <p>child:</p>
+                <p>adult:</p>
+                <p>child:</p>
+              </div>
+              <div class="right">
+                <input type="number" placeholder="2" />
+                <input type="number" placeholder="1" />
+                <p>₹ 300/-</p>
+                <p>₹ 150/-</p>
+              </div>
+            </div>
+            <button>buy tickets</button>
+            <p class="show-time">⏱️ 7:00 PM</p>
           </div>
         </div>
       </section>
