@@ -519,7 +519,7 @@ nav {
   }
 }
 
-/* Extra small devices (mobiles, less than 500px) */
+/* small devices (mobiles, less than 500px) */
 @media screen and (max-width: 500px) {
   .navbar{
     margin: 0;
@@ -562,5 +562,88 @@ nav {
 
   .form-body button{
     width: 260px;
+  }
+}
+
+/* Extra small devices (mobiles, less than 360px) */
+@media screen and (max-width: 360px) {
+  .navbar{
+    margin: 0;
+    padding: 0 ;
+    width: 100%;
+  }
+
+  .navbar img{
+    height: 40px;
+    margin-left: 15px;
+  }
+
+  .nav-links li{
+    font-size: 14px;
+  }
+
+  .icons{
+    display: none;
+  }
+
+  .icons i{
+    font-size: 20px;
+  }
+
+  .show-time-heading-desc{
+    font-size: 11px;
+  }
+
+  .stream-heading{
+    font-size: 22px;
+  }
+
+  .stream-heading-desc{
+    font-size: 12px;
+  }
+
+  .tickets-heading-desc{
+    font-size: 12px;
+  }
+
+  .tickets-cards-container{
+    padding: 30px 50px;
+    flex-direction: column;
+  }
+
+  .ticket-card{
+    height: auto;
+    margin: 20px 0;
+    width: 210px;
+  }
+
+  .show-time{
+    margin: 0;
+  }
+
+  .ticket-card button{
+    height: 40px;
+    width: 105px;
+    font-size: 13px;
+  }
+
+  .booking-heading-desc{
+    font-size: 12px;
+  }
+
+  .form-body{
+    width: 220px;
+  }
+
+  .form-body input{
+    width: 150px;
+  }
+
+  .form-body label{
+    margin-right: 120px;
+  }
+
+  .form-body button{
+    width: 160px;
   }
 }
