@@ -419,8 +419,25 @@ nav {
 @media screen and (max-width: 576px) {
   .navbar{
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     width: 100%;
+  }
+
+  .navbar img{
+    height: 50px;
+    margin-left: 20px;
+  }
+
+  .nav-links li{
+    font-size: 15px;
+  }
+
+  .icons{
+    margin-right: 25px;
+  }
+
+  .icons i{
+    font-size: 22px;
   }
 
   .show-time-heading{
@@ -429,6 +446,7 @@ nav {
 
   .show-time-heading-desc{
     margin-bottom: 20px;
+    font-size: 15px;
   }
 
   .show-time-card{
@@ -480,6 +498,14 @@ nav {
     margin: 20px;
   }
 
+  .booking-heading{
+    font-size: 20px;
+  }
+
+  .booking-heading-dec{
+    font-size: 15px;
+  }
+
   .form-body{
     width: 400px;
   }
@@ -493,4 +519,48 @@ nav {
   }
 }
 
+/* Extra small devices (mobiles, less than 500px) */
+@media screen and (max-width: 500px) {
+  .navbar{
+    margin: 0;
+    padding: 0 ;
+    width: 100%;
+  }
 
+  .navbar img{
+    height: 40px;
+    margin-left: 15px;
+  }
+
+  .nav-links li{
+    font-size: 14px;
+  }
+
+  .icons{
+    margin-right: 30px;
+  }
+
+  .icons i{
+    font-size: 20px;
+  }
+
+  .tickets-cards-container{
+    padding: 30px 50px;
+  }
+
+  .form-body{
+    width: 320px;
+  }
+
+  .form-body input{
+    width: 220px;
+  }
+
+  .form-body label{
+    margin-right: 220px;
+  }
+
+  .form-body button{
+    width: 260px;
+  }
+}
