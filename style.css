@@ -86,7 +86,7 @@ nav {
   transform: scale(1.2);
 }
 
-/*============= movies ==============*/
+/*============= movies section ==============*/
 
 .show-time-heading{
   text-align: center;
@@ -127,6 +127,7 @@ nav {
 
 .show-time-card h3 {
   font-size: 18px;
+  text-align: center;
   margin: 15px 0 0 0;
   color: var(--text-color);
 }
@@ -134,6 +135,7 @@ nav {
 .show-time-card p {
   color: var(--description-color);
   font-size: 17px;
+  text-align: center;
   margin: 5px 0;
   text-transform: capitalize;
 }
@@ -416,7 +418,7 @@ nav {
 /*================== Media Queries ==================*/
 
 /* Small devices (mobiles, 576px and above) */
-@media screen and (max-width: 576px) {
+@media screen and (min-width:500px) and (max-width: 576px) {
   .navbar{
     margin: 0;
     padding: 0 ;
@@ -496,6 +498,11 @@ nav {
 
   .ticket-card{
     margin: 20px;
+    height: 340px;
+  }
+
+  .show-time{
+    margin: 0;
   }
 
   .booking-heading{
@@ -520,7 +527,7 @@ nav {
 }
 
 /* small devices (mobiles, less than 500px) */
-@media screen and (max-width: 500px) {
+@media screen and (min-width:360px) and (max-width: 500px) {
   .navbar{
     margin: 0;
     padding: 0 ;
@@ -537,23 +544,51 @@ nav {
   }
 
   .icons{
-    margin-right: 30px;
+    display: none;
   }
 
   .icons i{
     font-size: 20px;
   }
 
+  .show-time-heading-desc{
+    font-size: 13px;
+  }
+
+  .tickets-section-heading{
+    font-size: 22px;
+  }
+
+  .tickets-heading-desc{
+    font-size: 13px;
+  }
+
   .tickets-cards-container{
-    padding: 30px 50px;
+    padding: 30px 40px;
+  }
+
+  .ticket-card{
+    height: 340px;
+  }
+
+  .show-time{
+    margin: 0;
+  }
+
+  .booking-heading{
+    font-size: 22px;
+  }
+
+  .booking-heading-desc{
+    font-size: 13px;
   }
 
   .form-body{
-    width: 320px;
+    width: 250px;
   }
 
   .form-body input{
-    width: 220px;
+    width: 200px;
   }
 
   .form-body label{
@@ -561,7 +596,7 @@ nav {
   }
 
   .form-body button{
-    width: 260px;
+    width: 240px;
   }
 }
 
