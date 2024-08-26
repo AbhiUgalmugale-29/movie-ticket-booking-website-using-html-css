@@ -25,10 +25,10 @@ This is a simple, responsive movie ticket booking webpage designed using HTML an
 project-folder/
 │
 ├── img/
-│   ├── movieicon.png
 │   ├── show-time-section-images/
 │   ├── stream-section-images/
-│   └── ...
+│   ├── movie.png
+│   └── movieicon.png
 │
 ├── screenshots/
 │   └── screenshot.png
