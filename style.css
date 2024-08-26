@@ -603,11 +603,12 @@ nav {
 
   .show-time-heading{
     margin: 0;
+    font-size: 18px;
   }
 
   .show-time-heading-desc{
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .show-time-card{
@@ -637,7 +638,11 @@ nav {
   }
 
   .stream-heading{
-    font-size: 28px;
+    font-size: 18px;
+  }
+
+  .stream-heading-desc{
+    font-size: 12px;
   }
 
   .stream-card{
@@ -655,6 +660,18 @@ nav {
     height: 200px;
   }
 
+  .tickets-section-heading{
+    font-size: 18px;
+  }
+
+  .tickets-heading-desc{
+    font-size: 12px;
+  }
+
+  .tickets-cards-container{
+    padding: 30px 0;
+  }
+
   .ticket-card{
     margin: 20px;
     height: 340px;
@@ -665,11 +682,11 @@ nav {
   }
 
   .booking-heading{
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  .booking-heading-dec{
-    font-size: 15px;
+  .booking-heading-desc{
+    font-size: 12px;
   }
 
   .form-body{
@@ -763,6 +780,10 @@ nav {
     height: 200px;
   }
 
+  .tickets-cards-container{
+    padding: 30px 0 0 0;
+  }
+
   .ticket-card{
     margin: 20px;
     height: 340px;
@@ -773,11 +794,11 @@ nav {
   }
 
   .booking-heading{
-    font-size: 20px;
+    font-size: 25px;
   }
 
-  .booking-heading-dec{
-    font-size: 15px;
+  .booking-heading-desc{
+    font-size: 17px;
   }
 
   .form-body{
